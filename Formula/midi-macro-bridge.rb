@@ -7,14 +7,14 @@ class MidiMacroBridge < Formula
   on_macos do
     on_arm do
       url "https://github.com/audiocontrol-org/audiocontrol/releases/download/v#{version}/midi-macro-bridge-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_MAC_ARM64_SHA256"
+      sha256 "164c413b09c9752924852768d8f67505bf453dec282d96b74b213eae107b5e75"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/audiocontrol-org/audiocontrol/releases/download/v#{version}/midi-macro-bridge-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "PLACEHOLDER_LINUX_X86_64_SHA256"
+      sha256 "148a5a56540d24230bd28b50ad40738212576660e23a60fbd5a1a49930688e9d"
     end
   end
 
