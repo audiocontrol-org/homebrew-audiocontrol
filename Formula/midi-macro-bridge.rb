@@ -49,10 +49,8 @@ class MidiMacroBridge < Formula
 
   test do
     # The binary doesn't yet have a --help flag (TODO upstream); --list-ports
-    # exits cleanly after enumerating MIDI inputs. We assert it runs at exit 0
-    # and produces some output (the port list, possibly empty if no MIDI
-    # devices are present).
-    output = shell_output("#{bin}/midi-macro-bridge --list-ports 2>&1")
-    assert_predicate output.length, :>=, 0
+    # exits cleanly after enumerating MIDI inputs. `system` fails the test if
+    # the binary exits non-zero, so the bare invocation is the test.
+    system bin/"midi-macro-bridge", "--list-ports"
   end
 end
