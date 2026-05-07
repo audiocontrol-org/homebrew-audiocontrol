@@ -2,19 +2,19 @@ class MidiMacroBridge < Formula
   desc "Translate MIDI events into keystrokes/macros for DAW integration"
   homepage "https://github.com/audiocontrol-org/audiocontrol"
   license any_of: ["MIT", "Apache-2.0"]
-  version "0.3.3"
+  version "0.4.0"
 
   on_macos do
     on_arm do
       url "https://github.com/audiocontrol-org/audiocontrol/releases/download/v#{version}/midi-macro-bridge-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "86cab5e72c0aa64c45477c1115e3f45f987c1c9fa4326a2b72c08e5a8a65978c"
+      sha256 "d26c739392d524ab9d3c05c00596c79db3d3c5125c5fb78ad02c626f67afc679"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/audiocontrol-org/audiocontrol/releases/download/v#{version}/midi-macro-bridge-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f7f4995c19af5171b27d5b40bb564a19e9873f3e20f4d1eb3aee52afd001dc2c"
+      sha256 "1c95aeb8f8d1cc9eb5d13a5b1ea033435a88b5599e20bbb900212e611401e571"
     end
   end
 
